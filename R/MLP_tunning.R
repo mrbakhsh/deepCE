@@ -47,6 +47,10 @@
   #' for Multi-layer Perception (MLP) model.
   #' @export
   #' @examples
+  #' #load the co-elution data
+  #' data("HelaCE")
+  #' #load the known complexes
+  #' data("refcpx")
   #' t_data <- build_trainingData(HelaCE, refcpx)
   #' MLP_tunning <-
   #' MLP_tunning(t_data$train_d,
