@@ -1,0 +1,69 @@
+Package: deepCE
+Type: Package
+Title: Inference of Interactome and Underying Protein Complexes from Co-fractionation MS Data via Deep Learning
+Version: 0.99.0
+Authors@R: c(
+    person("Matineh", "Rahmatbakhsh", ,"matinerb.94@gmail.com",c("aut","trl","cre")),
+    person("Mohan", "Babu", ,"mohan.babu@uregina.ca", c("led")),
+     person("Alla", "Gagarinova", ,"alla.gagarinova@usask.ca", c("led")))
+Description: Co-fractionation mass spectrometry (CF-MS) has emerged as a powerful approach 
+    for cell-wide identification of protein complexes that performs nearly all
+    biological processes and cellular activities. While computational tools based 
+    on traditional machine learning is widely applied to analyze protein complexes, 
+    it remains unclear if it is the most suitable choice for analyzing CF/MS 
+    dataset. Here, we introduce deepCE, a R/Bioconductor package that employs deep 
+    learning approaches for automated scoring of co-fractionation mass spectrometry 
+    (CF-MS) and sophisticated clustering procedure for network inference of 
+    underlying complexes. 
+Depends:
+  R (>= 4.1),
+  keras
+Imports:
+  dplyr,
+  tidyr,
+  igraph,
+  ggplot2,
+  pROC,
+  PRROC,
+  RcppAlgos,
+  purrr,
+  tibble,
+  stringr,
+  data.table,
+  magrittr,
+  DiffCorr,
+  MSnbase,
+  stats,
+  grDevices,
+  utils
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/mrbakhsh/deepCE
+BugReports: https://github.com/mrbakhsh/deepCE/issues
+VignetteBuilder: knitr
+Suggests:
+  ptw,
+  infotheo,
+  reshape2,
+  fmsb,
+  knitr,
+  rmarkdown,
+  BiocStyle,
+  gprofiler2,
+  fgsea,
+  lsa,
+  WGCNA,
+  plyr,
+  proxy,
+  fdrtool,
+  BiocGenerics,
+  RUnit
+SystemRequirement: tensorflow
+biocViews: 
+    Proteomics,
+    SystemsBiology,
+    NetworkInference,
+    Network,
+    Clustering,
+    MassSpectrometry
+RoxygenNote: 7.1.2
