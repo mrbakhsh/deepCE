@@ -41,6 +41,8 @@
   #' @export
   #' @importFrom utils write.table
   #' @examples
+  #' # load the reference complexes
+  #' data("refcpx")
   #' Clust_tuning_Result <-
   #' Clust_tuning(refcpx,
   #' csize = 3,
