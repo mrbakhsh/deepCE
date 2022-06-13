@@ -29,6 +29,7 @@
   #' networks. Nat. Methods 9, 471.
   #' @importFrom stringr str_replace_all
   #' @importFrom stringr str_split
+  #' @importFrom utils write.table
   #' @description This function optimize the choice of ClusterONE algorithm
   #' parameters such as density, node penalty, and overlap score by comparing
   #' clustering-derived partitions for each combination of parameters to known
@@ -39,8 +40,9 @@
   #' redundancy in the known reference complexes
   #' via \code{\link{RemoveCpxRedundance}}, then performs parameter tunning.
   #' @export
-  #' @importFrom utils write.table
   #' @examples
+  #' #load the reference cpx
+  #' data("refcpx")
   #' Clust_tuning_Result <-
   #' Clust_tuning(refcpx,
   #' csize = 3,
