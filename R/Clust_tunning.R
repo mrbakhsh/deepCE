@@ -41,7 +41,7 @@
   #' via \code{\link{RemoveCpxRedundance}}, then performs parameter tunning.
   #' @export
   #' @examples
-  #' #load the reference cpx
+  #' # load the reference complexes
   #' data("refcpx")
   #' Clust_tuning_Result <-
   #' Clust_tuning(refcpx,
