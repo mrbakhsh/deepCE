@@ -1,7 +1,7 @@
 Package: deepCE
 Type: Package
 Title: Inference of Interactome and Underying Protein Complexes from Co-fractionation MS Data via Deep Learning
-Version: 0.99.2
+Version: 0.99.3
 Authors@R: c(
     person("Matineh", "Rahmatbakhsh", ,"matinerb.94@gmail.com",c("aut","trl","cre")),
     person("Mohan", "Babu", ,"mohan.babu@uregina.ca", c("led")),
