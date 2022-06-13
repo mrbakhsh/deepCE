@@ -29,7 +29,6 @@
   #' networks. Nat. Methods 9, 471.
   #' @importFrom stringr str_replace_all
   #' @importFrom stringr str_split
-  #' @importFrom utils write.table
   #' @description This function optimize the choice of ClusterONE algorithm
   #' parameters such as density, node penalty, and overlap score by comparing
   #' clustering-derived partitions for each combination of parameters to known
@@ -40,6 +39,7 @@
   #' redundancy in the known reference complexes
   #' via \code{\link{RemoveCpxRedundance}}, then performs parameter tunning.
   #' @export
+  #' @importFrom utils write.table
   #' @examples
   #' # load the reference complexes
   #' data("refcpx")
@@ -50,6 +50,7 @@
   #' p = c(2),
   #' mx_overlap = c(0.5,0.6),
   #' tpath = file.path(system.file("extdata", package = "deepCE")))
+
 
 
 
