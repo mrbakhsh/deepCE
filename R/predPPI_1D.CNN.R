@@ -227,6 +227,8 @@
       if(similarity_calculation){
 
         data_s <- data[sort(rownames(data)), ]
+        data_s <-
+             filter_ConsecutivePep(data_s, min_stretch_length=min_stretch_length)
         m <-  similarity_score(data_s, metric)
         m[lower.tri(m, diag=TRUE)] <- NA
         s <-
