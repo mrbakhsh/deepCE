@@ -21,6 +21,7 @@
   #' @examples
   #' # predict complexes
   #' predcpx <- get_clusters()
+  #' predcpx <- predcpx[1:10,]
   #' # perform enrichment for KEGG
   #' enrichCPX <-
   #' enrichfindCPX(predcpx,

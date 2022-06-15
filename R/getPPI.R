@@ -23,8 +23,9 @@
   #' @export
   #' @examples
   #' data("HelaCE")
-  #' conc_dat <- getPPI(HelaCE, similarity_calculation = TRUE,
-  #' metric = "pearson")
+  #' # select subset of a data
+  #' m <- HelaCE[1:10, 1:10]
+  #' conc_dat <- getPPI(m, similarity_calculation = FALSE)
 
 
 
