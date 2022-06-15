@@ -70,12 +70,12 @@ data("HelaCE")
 #load the known complexes
 data("refcpx")
 t_data <- build_trainingData(HelaCE, refcpx)
-MLP_tunning <-
+MLP_tunning_result <-
 MLP_tunning(t_data$train_d,
 t_data$train_l,
 nlayers = 2,
 powerto1 = c(4,6),
-powerto2 = c(4,6),
+powerto2 = 6,
 drate = 0.3,
 optimizer = "rmsprop",
 b_size = 50,

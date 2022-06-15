@@ -98,22 +98,6 @@ from co-elution data.
 \details{
 oneD_CNN
 }
-\examples{
-#load the co-elution data
-data("HelaCE")
-#load the reference data for training
-data("refcpx")
-# concatenate the profile
-m_combined <- getPPI(HelaCE, similarity_calculation = TRUE)
-# build training data
-t_data <- build_trainingData(HelaCE, refcpx)
-#predict
-pred_int <-
-oneD_CNN(m_combined,
-t_data$train_d,
-t_data$train_l,
-cv_fold = 2)
-}
 \author{
 Matineh Rahmatbakhsh, \email{matinerb.94@gmail.com}
 }

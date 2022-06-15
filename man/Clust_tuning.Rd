@@ -57,7 +57,7 @@ Clust_tuning(refcpx,
 csize = 3,
 d = c(0.3, 0.5),
 p = c(2),
-mx_overlap = c(0.5,0.6),
+mx_overlap = c(0.5),
 tpath = file.path(system.file("extdata", package = "deepCE")))
 }
 \references{
