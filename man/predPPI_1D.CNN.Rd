@@ -128,7 +128,8 @@ Defaults to 64. See \code{\link{oneD_CNN}}.}
 See \code{\link{oneD_CNN}}.}
 
 \item{plots}{Logical value, indicating whether to plot the performance of
-the learning algorithm using k-fold cross-validation; Defaults to FALSE.
+the learning algorithm using k-fold cross-validation; Defaults to FALSE. If
+TRUE, plots will be generated in the current directory.
 These plots are :
 \itemize{ \item{pr_plot} - Precision-recall PLOT
 \item{roc_plot} - ROC plot
@@ -187,5 +188,7 @@ data("HelaCE")
 # Known reference complexes
 data("refcpx")
 # Perform prediction
-oneDCNN_prediction_outputs <- predPPI_1D.CNN(HelaCE,refcpx,cv_fold = 2)
+oneDCNN_prediction_outputs <- predPPI_1D.CNN(HelaCE,refcpx,cv_fold = 2,
+nlayers = 1,
+epochs = 5)
 }

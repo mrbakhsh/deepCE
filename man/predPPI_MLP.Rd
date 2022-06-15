@@ -164,5 +164,9 @@ data("HelaCE")
 # Known reference complexes
 data("refcpx")
 # Perform prediction
-MLP_prediction_outputs <- predPPI_MLP(HelaCE,refcpx,cv_fold = 2)
+MLP_prediction_outputs <-
+predPPI_MLP(HelaCE,
+refcpx,
+cv_fold = 2,
+epochs = 5)
 }

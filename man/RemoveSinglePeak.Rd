@@ -27,8 +27,11 @@ with zero, eliminating data-noise “peaks” that only span one fraction.
 RemoveSinglePeak
 }
 \examples{
+# load the co-eluton table
 data("HelaCE")
-filt_data <- RemoveSinglePeak(HelaCE)
+# select subset of a data
+m <- HelaCE[1:10,1:10]
+filt_data <- RemoveSinglePeak(m)
 }
 \references{
 Schlossarek,D. et al. (2021) PROMISed: A novel web-based tool to

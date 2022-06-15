@@ -81,7 +81,8 @@
   #' overlap between two clusters; defaults to 0.8.
   #' See \code{\link{get_clusters}}.
   #' @param plots Logical value, indicating whether to plot the performance of
-  #' the learning algorithm using k-fold cross-validation; Defaults to FALSE.
+  #' the learning algorithm using k-fold cross-validation; Defaults to FALSE. If
+  #' TRUE, plots will be generated in the current directory.
   #' These plots are :
   #' \itemize{ \item{pr_plot} - Precision-recall PLOT
   #' \item{roc_plot} - ROC plot
@@ -115,7 +116,9 @@
   #' # Known reference complexes
   #' data("refcpx")
   #' # Perform prediction
-  #' oneDCNN_prediction_outputs <- predPPI_1D.CNN(HelaCE,refcpx,cv_fold = 2)
+  #' oneDCNN_prediction_outputs <- predPPI_1D.CNN(HelaCE,refcpx,cv_fold = 2,
+  #' nlayers = 1,
+  #' epochs = 5)
 
 
 
@@ -227,6 +230,8 @@
       if(similarity_calculation){
 
         data_s <- data[sort(rownames(data)), ]
+        data_s <-
+             filter_ConsecutivePep(data_s, min_stretch_length=min_stretch_length)
         m <-  similarity_score(data_s, metric)
         m[lower.tri(m, diag=TRUE)] <- NA
         s <-

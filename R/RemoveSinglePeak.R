@@ -59,8 +59,11 @@
   #' with zero, eliminating data-noise “peaks” that only span one fraction.
   #' @export
   #' @examples
+  #' # load the co-eluton table
   #' data("HelaCE")
-  #' filt_data <- RemoveSinglePeak(HelaCE)
+  #' # select subset of a data
+  #' m <- HelaCE[1:10,1:10]
+  #' filt_data <- RemoveSinglePeak(m)
 
   RemoveSinglePeak <- function(data,
                                plot_RemovalSinglePeaks = FALSE,

@@ -85,7 +85,8 @@ pred_int <-
 MLP_m(m_combined,
 t_data$train_d,
 t_data$train_l,
-cv_fold = 2)
+cv_fold = 2,
+epochs = 5)
 }
 \author{
 Matineh Rahmatbakhsh, \email{matinerb.94@gmail.com}

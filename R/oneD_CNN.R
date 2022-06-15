@@ -58,22 +58,6 @@
   #' network (1D-CNN) on densly-connected neural net to predict interactions
   #' from co-elution data.
   #' @export
-  #' @examples
-  #' #load the co-elution data
-  #' data("HelaCE")
-  #' #load the reference data for training
-  #' data("refcpx")
-  #' # concatenate the profile
-  #' m_combined <- getPPI(HelaCE, similarity_calculation = TRUE)
-  #' # build training data
-  #' t_data <- build_trainingData(HelaCE, refcpx)
-  #' #predict
-  #' pred_int <-
-  #' oneD_CNN(m_combined,
-  #' t_data$train_d,
-  #' t_data$train_l,
-  #' cv_fold = 2)
-
 
   oneD_CNN <-
     function(data,
