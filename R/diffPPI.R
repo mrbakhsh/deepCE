@@ -238,13 +238,13 @@
 
       fname <- file.path(tpath, "differential_PPI_unfilt.txt")
       write.table(diff_PPI, file = fname,
-                  row.names=FALSE, col.names=FALSE,
+                  row.names=FALSE, col.names=TRUE,
                   sep="\t", quote=FALSE)
 
 
       fname <- file.path(tpath, "differential_PPI_filtered.txt")
       write.table(diff_PPI_filt, file = fname,
-                  row.names=FALSE, col.names=FALSE,
+                  row.names=FALSE, col.names=TRUE,
                   sep="\t", quote=FALSE)
 
      output <- list()
